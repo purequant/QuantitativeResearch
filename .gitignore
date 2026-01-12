@@ -1,0 +1,5 @@
+# Ignore any nested markdown image folders
+**/markdown_img/
+
+# Jupyter temporary files
+**/.ipynb_checkpoints/
