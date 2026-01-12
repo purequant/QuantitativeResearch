@@ -1,9 +1,15 @@
-# Git 必会命令速查（个人笔记）
+# Git 必会命令速查
+
+[toc]
+
+## 前言
+
+因为准备把 `量化研究` 系列的笔记和代码放到 GitHub 上，很久没用 Git 了，对常用命令记不太清楚，所以整理了这份速查表，方便日常使用。以下内容<mark>主要由 VSCode Copilot 插件中的  `GPT 5.2`  模型生成</mark>。
 
 > 目标：覆盖日常 90% 场景的最小命令集。
 > 建议配合：`git status`（随时看状态） + 小步提交（频繁 commit）。
 
-## 1. 初始化/克隆
+## 1. 初始化 / 克隆
 
 - 初始化本地仓库：`git init`
 - 从远端克隆：`git clone <url>`
@@ -31,7 +37,7 @@
 - 合并分支：`git merge <branch>`
 - 变基（让历史更线性）：`git rebase <branch>`
 
-## 5. 远端同步（推/拉）
+## 5. 远端同步（推 / 拉）
 
 - 查看远端：`git remote -v`
 - 添加远端：`git remote add origin <url>`
@@ -41,7 +47,7 @@
 - 推送：`git push`
 - 首次推送并设置上游：`git push -u origin main`
 
-## 6. 撤销/修复（非常重要）
+## 6. 撤销 / 修复（非常重要）
 
 - 丢弃工作区对某文件的修改：`git restore <file>`
 - 撤销暂存（保留工作区改动）：`git restore --staged <file>`
@@ -59,14 +65,14 @@
 
 ## 7. 文件操作与忽略
 
-- 重命名/移动（让 Git 更容易识别为 rename）：`git mv <old> <new>`
+- 重命名 / 移动（让 Git 更容易识别为 rename）：`git mv <old> <new>`
 - 删除并纳入版本控制：`git rm <file>`
 - 忽略文件：`.gitignore`
   - 示例：忽略所有 markdown_img：`**/markdown_img/`
 
 ## 8. 两个常用工作流模板
 
-### A) 写文章/改代码并推到 GitHub
+### A) 写文章 / 改代码并推到 GitHub
 
 1) `git status`
 2) `git add .`
@@ -81,9 +87,13 @@
 4) `git commit -m "..."`
 5) `git push`
 
-## 9. 常见坑（Windows/中文路径）
+## 9. 常见坑（Windows/ 中文路径）
 
-- `git ls-files` 显示中文为转义：
+- `git ls-files` 设置中文正常显示（适用于中文类似`\346\211`一大串）：
   - `git config --global core.quotepath false`
 - 大小写重命名（如 readme.md -> README.md）在 Windows 可能不生效：
   - 用两步：`git mv readme.md tmp.md` 再 `git mv tmp.md README.md`
+
+## 后记
+
+得益于 AI 的强大，即便不熟悉 Git 命令，也能在 AI 的帮助下，快速上手并完成日常工作。希望这份速查表能帮到你！
