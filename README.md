@@ -22,6 +22,10 @@ If you find this repo helpful, please consider giving it a Star. Issues and disc
 - 我国沪深主板 A 股到底有多少只股票
 	- 内容概览：从多个来源整理沪深主板 A 股列表，解释口径差异，并给出统计与核对思路。
 
+- Git 必会命令速查
+	- 内容概览：面向日常使用的 Git 命令最小集合与常见坑（含 Windows/中文路径注意事项）。
+	- 文档位置：[Git 必会命令速查/git-必会命令速查.md](Git%20%E5%BF%85%E4%BC%9A%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/git-%E5%BF%85%E4%BC%9A%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5.md)
+
 ## Table of Contents / Articles
 
 - AkShare: Batch download and analyze listed companies’ income statements
@@ -29,3 +33,7 @@ If you find this repo helpful, please consider giving it a Star. Issues and disc
 
 - How many A-share stocks are there on the Shanghai/Shenzhen main boards?
 	- Summary: Compile main-board A-share lists from multiple sources, explain definition/coverage differences, and outline a counting & verification approach.
+
+- Git essentials cheat sheet
+	- Summary: A practical minimal set of Git commands for daily work, plus common pitfalls (including Windows/Unicode path tips).
+	- Doc: [Git 必会命令速查/git-必会命令速查.md](Git%20%E5%BF%85%E4%BC%9A%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/git-%E5%BF%85%E4%BC%9A%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5.md)
