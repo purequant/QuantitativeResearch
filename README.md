@@ -22,6 +22,11 @@ If you find this repo helpful, please consider giving it a Star. Issues and disc
 - 我国沪深主板 A 股到底有多少只股票
 	- 内容概览：从多个来源整理沪深主板 A 股列表，解释口径差异，并给出统计与核对思路。
 
+- 上市公司财务指标可视化分析
+	- 内容概览：基于上市公司季度财务数据，使用 Matplotlib/Seaborn 绘制多线图、同比子图、散点矩阵与相关系数热力图，并对图表美化参数进行说明。
+	- 文档位置：[上市公司财务指标可视化分析/上市公司财务指标可视化分析.md](%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90/%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90.md)
+	- Notebook：[上市公司财务指标可视化分析/上市公司财务指标可视化分析.ipynb](%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90/%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90.ipynb)
+
 - Git 必会命令速查
 	- 内容概览：面向日常使用的 Git 命令最小集合与常见坑（含 Windows/中文路径注意事项）。
 	- 文档位置：[Git 必会命令速查/git-必会命令速查.md](Git%20%E5%BF%85%E4%BC%9A%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/git-%E5%BF%85%E4%BC%9A%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5.md)
@@ -33,6 +38,11 @@ If you find this repo helpful, please consider giving it a Star. Issues and disc
 
 - How many A-share stocks are there on the Shanghai/Shenzhen main boards?
 	- Summary: Compile main-board A-share lists from multiple sources, explain definition/coverage differences, and outline a counting & verification approach.
+
+- Visual analysis of listed companies’ financial metrics
+	- Summary: Use quarterly financial data to plot multi-line trends, YoY subplots, pair plots, and correlation heatmaps with Matplotlib/Seaborn, including notes on chart styling parameters.
+	- Doc: [上市公司财务指标可视化分析/上市公司财务指标可视化分析.md](%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90/%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90.md)
+	- Notebook: [上市公司财务指标可视化分析/上市公司财务指标可视化分析.ipynb](%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90/%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90.ipynb)
 
 - Git essentials cheat sheet
 	- Summary: A practical minimal set of Git commands for daily work, plus common pitfalls (including Windows/Unicode path tips).
