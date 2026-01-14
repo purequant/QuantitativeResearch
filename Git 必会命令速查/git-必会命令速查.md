@@ -25,6 +25,56 @@
 - 初始化本地仓库：`git init`
 - 从远端克隆：`git clone <url>`
 
+### 把远程仓库拉到本地（推荐步骤）
+
+#### A) 第一次拉取（本地还没有这个仓库）
+
+1) 选一个本地目录（可选）：`cd <你的目录>`
+2) 克隆仓库：`git clone <url>`
+3) 进入仓库目录：`cd <repo>`
+4) 检查是否拉取成功：
+  - `git status -sb`
+  - `git remote -v`
+
+#### B) 本地已有仓库，想同步远端最新代码
+
+- 进入仓库：`cd <repo>`
+- 拉取更新（更推荐，历史更干净）：`git pull --rebase`
+- 或者（更保守，产生合并提交）：`git pull`
+- 只抓取不改文件（先看看再合并）：`git fetch`
+
+#### C) 本地已有一份“普通文件夹”，想关联到远端仓库
+
+1) `cd <folder>`
+2) 初始化：`git init`
+3) 添加远端：`git remote add origin <url>`
+4) 拉取并对齐到远端（常见做法）：`git pull --rebase origin main`
+5) 之后同步：`git pull --rebase`
+
+> 小提示：如果 `git pull` 提示需要登录，HTTPS 通常用“浏览器登录/Token”，也可以改用 SSH（`git@github.com:...`）。
+
+### 拉取时发生冲突（最小处理命令）
+
+#### A) `git pull --rebase` 过程中冲突
+
+1) 按提示打开冲突文件，手动处理 `<<<<<<</=======/>>>>>>>` 标记
+2) 标记为已解决：`git add <file>`
+3) 继续：`git rebase --continue`
+4) 放弃这次 rebase（回到冲突前）：`git rebase --abort`
+
+#### B) `git pull`（merge）过程中冲突
+
+1) 手动处理冲突文件
+2) `git add <file>`
+3) 完成合并提交：`git commit`
+4) 放弃这次合并（回到合并前）：`git merge --abort`
+
+#### C) 想“一键保留本地/远端”某个冲突文件（常用）
+
+- 保留本地版本（ours）：`git checkout --ours <file>`
+- 保留远端版本（theirs）：`git checkout --theirs <file>`
+- 然后：`git add <file>` 再 `git rebase --continue` 或 `git commit`
+
 ## 2. 日常三件套（最常用）
 
 - 看状态：`git status`
